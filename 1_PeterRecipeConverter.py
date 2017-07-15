@@ -50,3 +50,6 @@ print "(That is %.2f grams of table salt.)" % (float(salt) * saltwgt * float(adj
 print "Yeast: %.2f teaspoons." % (float(yeast) * float(adjustment)),
 print "(That is %.2f grams of baker's yeast.)" % (float(yeast) * yeastwgt * float(adjustment))
 print "Happy Baking!"
+
+# Notes from proferssor's solution:
+# modify raw_input for float right off the spot now as I did all along the way - much less typing
