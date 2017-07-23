@@ -21,3 +21,7 @@ songPt2 = ['little', 'lamb']
 song = songPt1 + (songPt2 * 3)
 
 print song
+
+for items in songPt1:
+    temp = items
+    print temp 
