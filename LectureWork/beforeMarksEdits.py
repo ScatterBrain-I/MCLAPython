@@ -29,13 +29,10 @@ def determineWinner():
     for i in range (0, 3):
         if number[i] == max(number):
             winner = name[i]
-    return winner # IS this where 'winner is? That is grabbed by payOut?
+    return winner
 
-# payout takes three pieces of 9information
-# the winner, the user pick, and the current money in the bank
-# this allows payout to have what it needs without
-# calling functions that have already been called in main
-def payOut(winner, pick, money, wager): #i see
+def payOut():
+    winner = determineWinner()
     if winner == pick:
         print "\nYou picked the winner, %s." % winner
         money = (money + wager)
@@ -51,7 +48,6 @@ def payOut(winner, pick, money, wager): #i see
         for i in range (0, 3):
             number[i] = 0
         go = True
-    return go
 
 def main():
     money = 100
@@ -73,14 +69,7 @@ def main():
             time.sleep(1)
             sortOfRandDogs()
             printDogStatus()
-        winner = determineWinner()
-        
-        # call payout and pass it the winner, user pick, and current money
-        # this information can then be used in payout
-        # let's take a look at payout
-        go = payOut(winner, pick, money, wager) 
-        
-            
+        determineWinner()
         
 main()        
 
