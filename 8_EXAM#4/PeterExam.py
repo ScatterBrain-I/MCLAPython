@@ -12,7 +12,9 @@ import NEMO
 import os
 
 files = os.listdir('.')
+
 #-------------------------------------------------------------------------------
+# takes list of files in directory and makes new list files2 on only .txt files
 #-------------------------------------------------------------------------------
 def newFiles(files):
     files2 = []
@@ -61,6 +63,14 @@ def counterPrint(counter):
 
 #-------------------------------------------------------------------------------
 # main is the main main that does the main thing (stated at top of code)
+# i added two new functions to my NEMO module for this exam
+#       singPlur()
+#       wasWere()
+#
+# NOTE: Try searching "cOUnTer" It will show that the case sensitive works, 
+#       the .py files are not being searched, and
+#       that ther singPlur and wasWere work. 
+#       Time stressful, but fun exam. :) -p
 #-------------------------------------------------------------------------------
 def main():
     files2 = newFiles(files) #makes proper file list from directory
